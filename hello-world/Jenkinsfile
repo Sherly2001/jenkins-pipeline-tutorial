@@ -3,12 +3,13 @@ pipeline {
     stages {
         stage('Static Analysis') {
             steps {
-                echo 'Run the static analysis to the code' 
+                echo 'Run the static analysis to the code by Sherly' 
             }
         }
         stage('Compile') {
             steps {
                 echo 'Compile the source code' 
+                echo'Sucess!!!'
             }
         }
         stage('Security Check') {
@@ -19,6 +20,7 @@ pipeline {
         stage('Run Unit Tests') {
             steps {
                 echo 'Run unit tests from the source code' 
+                echo'Done'
             }
         }
         stage('Run Integration Tests') {
@@ -29,6 +31,7 @@ pipeline {
         stage('Publish Artifacts') {
             steps {
                 echo 'Save the assemblies generated from the compilation' 
+                echo'Done'
             }
         }
     }
